@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creative Submission Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h2 style="text-align:center; margin-bottom: 20px; color: white;">CORE SUBMISSION <br /><span style="font-size: 0.8em; font-weight: normal;">Tune Diaries</span></h2>
+
+    <form id="submissionForm" enctype="multipart/form-data" style="max-width: 700px; margin: 0 auto; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 255, 255, 1);">
+
+        <!-- Creative's Details Section -->
+        <fieldset>
+            <legend>Creative's Details</legend>
+            <label for="bio">Creative's Bio:</label><br />
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Enter bio here..."></textarea><br />
+            <small class="caption">Please provide a brief bio about the creative.</small><br /><br />
+            <label for="stageName">Stage Name:</label><br />
+            <input type="text" id="stageName" name="stageName" placeholder="Stage name" required /><br /><br />
+            <label for="photo">Photo for Magazine (up to 1GB):</label><br />
+            <input type="file" id="photo" name="photo" accept="image/*" multiple required /><br />
+            <small class="caption">High quality photos only. At least 2 images.</small><br /><br />
+            <label for="socialUsername">Instagram/TikTok Username:</label><br />
+            <input type="text" id="socialUsername" name="socialUsername" placeholder="@username" /><br /><br />
+        </fieldset>
+        <!-- Project Details Section -->
+        <fieldset>
+            <legend>Project Details</legend>
+            <label for="projectTitle">Project Title:</label><br />
+            <input type="text" id="projectTitle" name="projectTitle" placeholder="Project title" required /><br /><br />
+            <label for="releaseDate">Release Date:</label><br />
+            <input type="date" id="releaseDate" name="releaseDate" required /><br /><br />
+            <label for="story">Story Behind Project:</label><br />
+            <textarea id="story" name="story" rows="4" cols="50" placeholder="Tell us the story behind the project..."></textarea><br />
+            <small class="caption">Hint: Share the inspiration or background of the project. Keep it concise and engaging. Add something small to make it more interesting.</small><br /><br />
+            <label for="projectLink">Link to Project:</label><br />
+            <input type="url" id="projectLink" name="projectLink" placeholder="https://example.com" /><br /><br />
+        </fieldset>
+        <!-- Submitter Details Section -->
+        <fieldset>
+            <legend>Submitter Details</legend>
+            <label for="submittedBy">Submitted By:</label><br />
+            <select id="submittedBy" name="submittedBy" required>
+                <option value="">Select one</option>
+                <option value="artist">Artist</option>
+                <option value="manager">Manager</option>
+            </select><br /><br />
+            <label for="submitterName">Name:</label><br />
+            <input type="text" id="submitterName" name="submitterName" placeholder="Your name" required /><br /><br />
+            <label for="submitterEmail">Email:</label><br />
+            <input type="email" id="submitterEmail" name="submitterEmail" placeholder="Your email" required /><br /><br />
+        </fieldset>
+        <p class="caption" style="text-align:center; font-size: 0.9em; color: #555; margin-top: 20px;">
+            By submitting this form, you allow us to publish your project in our magazines.
+        </p>
+        <button type="submit" style="display: block; margin: 0 auto; background-color: #007BFF; color: white; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Submit</button>
+    </form>
+</body>
+</html>
